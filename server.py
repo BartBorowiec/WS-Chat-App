@@ -8,7 +8,7 @@ import websockets
 messages = []
 
 async def consumer(websocket, message):
-    messages.append(message)
+    # messages.append(message)
     print(f'Messages: {messages}')
     await websocket.send(message)
 

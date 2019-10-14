@@ -1,14 +1,9 @@
-var websocket = new WebSocket('ws://localhost:8765');
+import Vue from 'vue';
 
-var form = document.querySelector('form');
-var input = document.querySelector('#message');
+import App from './App.vue';
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    websocket.send(input.value);
-})
-
-websocket.onmessage = function(event) {
-    console.log(event);
-}
+new Vue({
+    el: '#app',
+    template: '<App/>',
+    components: { App },
+  });
