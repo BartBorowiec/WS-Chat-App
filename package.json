@@ -1,0 +1,11 @@
+{
+  "name": "ws-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bart Borowiec",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  }
+}
