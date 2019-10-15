@@ -24,11 +24,12 @@ websocket.onopen = function(event) {
 
 </script>
 
-<style scoped>
+<style lang="scss">
     body {
-        font-family: 'Roboto', Arial, sans-serif;
+        background-color: aqua;
     }
     h1 {
         text-align: center;
+        font-family: 'Roboto', Arial, sans-serif;
     }
 </style>

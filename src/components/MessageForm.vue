@@ -1,7 +1,7 @@
 <template>
-    <form>
+    <form v-on:submit="sendMessage">
         <input type="text" placeholder="Enter message">
-        <SendButton/>
+        <button>Send ></button>
     </form>
 </template>
 
@@ -9,6 +9,11 @@
 import SendButton from './SendButton';
 
 export default {
-    
+    methods: {
+        sendMessage(e) {
+            e.preventDefault();
+            websocket.send(input.value);
+        }
+    }
 }
 </script>
